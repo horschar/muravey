@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0; padding: 0;}
+a img{border: none;	}
+:focus {outline: none;}
+@font-face {font-family: Frank; src: url(../font/framd.ttf);}
+@font-face {font-family: RalewayB; src: url(../font/Raleway-Bold.ttf);}
+@font-face {font-family: Helvetica; src: url(../font/HelveticaNeueCyr-Medium.otf);}
+@font-face {font-family: VerbenaC; src: url(../font/VerbenaC.otf);}
+
+.hidden{display:none !important;}
+.left {float: left !important;}
+.right {float: right !important;}
+.text-center {text-align: center !important;}
+.text-left {text-align: left !important;}
+.text-right {text-align: right !important;}
+
+html,
+body {
+	height: 100%;
+}
+body{
+	background:#bbb;
+	text-align: center;
+   font-size: 16px;
+   font-family: 'Frank', "Franklin Gothic Medium", serif;
+   background-image: url("../img/hexellence.png");
+}
+
+.no_select {
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer */
+   -webkit-user-select: none; /* Chrome, Safari, and Opera */
+   -webkit-touch-callout: none;
+}
+.shadow{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 50;
+	left: 0;
+	top: 0;
+	background-color: transparent;
+	background-color: rgba(0, 0, 0, 0.59);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#96000000,endColorstr=#96000000);
+	*zoom: 1;
+}
+.content {
+	float: left;
+	position: relative;
+	width: 100%;
+}
+.pace-background{
+	webkit-pointer-events: none;
+	pointer-events: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1999;
+	width: 100%;
+	height: 100%;
+	background: #3d3948;
+	background-image: url("../img/spinning-circles.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+		   

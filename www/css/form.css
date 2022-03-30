@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+input:not([type="image" i]), textarea {
+    box-sizing: border-box;
+}
+
+#FormTitle{
+    width:100%;
+    height:50px;
+    position:relative;
+    text-align:center;
+    color: #69459E;
+    font-family: 'RalewayB', Arial, sans-serif;
+    font-size: 30px;
+    cursor: default;
+    border-bottom:2px solid	#69459E;
+    margin-bottom:20px;
+}
+#FormTitle .back{
+    width:38px;
+    height:38px;
+    position:absolute;
+    z-index:81;
+    bottom:1px;
+    left:27px;
+    background-image:url(../img/home.png);
+    cursor:pointer;
+}
+#FormTitle .save{
+    width:38px;
+    height:38px;
+    position:absolute;
+    z-index:81;
+    bottom:0px;
+    right:27px;
+    background-image:url(../img/save.png);
+    cursor:pointer;
+}
+
+/*============================== Блоки ===========================*/
+.form .section{
+    width:100%;
+    height:auto;
+    display:inline-block;
+    float:left;
+    position:relative;
+}
+.form .left,
+.form .right{
+    width:42.5%;
+    height:auto;
+    display:inline-block;
+    float:left;
+    margin:0 3.75%;
+    position: relative;
+}
+.form .monoblock{
+    width:92.5%;
+    height:auto;
+    display:inline-block;
+    margin:0 3.75%;
+    position: relative;
+}
+
+/* ======================== item ===========================*/
+.form .item{
+    width:100%;
+    display: inline-block;
+    margin-top:5px;
+}
+
+.form .item.type_text .title,
+.form .item.type_link .title,
+.form .item.type_label .title,
+.form .item.type_select .title,
+.form .item.type_file .title,
+.form .item.type_password .title,
+.form .item.type_date .title,
+.form .item.type_datetime-local .title{
+    width: calc(40% - 7px);
+    min-height: 20px;
+    color: #F4F4F4;
+    background-color: rgba(23,23,23,1.00);
+    font-size: 16px;
+    font-family: Frank, "Franklin Gothic Medium";
+    padding: 10px 0 10px 7px;
+    display: inline-block;
+    float: left;
+    text-align: left;
+}
+
+.form .item.type_block .title{
+    height:30px;
+    color:#F4F4F4;
+    background-color:rgba(23,23,23,1.00);
+    font-size:16px;
+    font-family: Frank, "Franklin Gothic Medium", sans-serif;
+    padding:10px 0 0 7px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.form .item.type_text .itemBody,
+.form .item.type_link .itemBody,
+.form .item.type_label .itemBody,
+.form .item.type_select .itemBody,
+.form .item.type_password .itemBody,
+.form .item.type_date .itemBody,
+.form .item.type_datetime-local .itemBody{
+    width: 60%;
+    height:40px;
+    display:inline-block;
+    float:left;
+    position: relative;
+}
+.form .item.type_file .itemBody{
+    width: calc(60% - 12px);
+    border:1px solid rgba(23,23,23,1.00);
+    float:left;
+    height: 28px;
+    padding: 10px 0 0 10px;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    font-size:16px;
+    font-family: Frank, "Franklin Gothic Medium";
+}
+.form .item.type_block .itemBody{
+    position: relative;
+    text-align: center;
+    float: left;
+    width: calc(100% - 2px);
+    border: 1px solid #000;
+}
+.form .item.type_label .itemBody {
+    border:1px solid rgba(23,23,23,1.00);
+    color:rgba(23,23,23,1.00);
+    padding:0 5px 0 12px;
+    box-sizing: border-box;
+    font-size:16px;
+    font-family: Frank, "Franklin Gothic Medium";
+    text-align: left;
+    line-height: 38px;
+}
+
+.form .item.type_link .itemBody > a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Frank, "Franklin Gothic Medium";
+    color: #0a0000;
+    border: 1px solid;
+    width: 100%;
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+}
+
+.form .item.type_text .input,
+.form .item.type_password .input,
+.form .item.type_date .input,
+.form .item.type_datetime-local .input{
+    border:1px solid rgba(23,23,23,1.00);
+    width:100%;
+    height:40px;
+    display:inline-block;
+    color:rgba(23,23,23,1.00);
+    padding:0 5px 0 10px;
+    font-size:16px;
+    font-family: Frank, "Franklin Gothic Medium";
+}
+
+.form .item .textarea{
+    padding: 10px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+    float: left;
+    font-size:16px;
+    font-family: Frank, "Franklin Gothic Medium";
+}
+
+.form .item.type_select select{
+    border:1px solid rgba(23,23,23,1.00);
+    width: 100%;
+    height:40px;
+    display:inline-block;
+    float:left;
+    color:rgba(23,23,23,1.00);
+    padding:0 5px 0 10px;
+    font-size:16px;
+    font-family: Frank, "Franklin Gothic Medium";
+}
+
+
+
+/*================= buttons ====================*/
+.form .buttonsBl{
+    width:auto;
+    height:auto;
+    position:absolute;
+    top:0;
+    display:inline-block;
+    right:0;
+    background-color:rgba(23,23,23,1.00);
+    cursor:pointer;
+    z-index:84;
+}
+.form .buttonsBl .button{
+    display:inline-block;
+    float:left;
+    width:38px;
+    height:38px;
+}
+.form .buttonsBl .button:hover{background-color:#610A98;}
+.form .buttonsBl .button.pen{ background-image:url(../img/pen.png);}
+.form .buttonsBl .button.add{ background-image:url(../img/add.png);}
+.form .buttonsBl .button.delete{ background-image:url(../img/delete.png);}
+
+.form .item.type_file .itemBody .buttonsBl{right:-38px;}
+.form .item.type_file .itemBody:hover .buttonsBl{right:0;}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    margin: 0;
+}
+
+
+
+/* ===================== hint ===================*/
+.form .hint{
+    width: calc(100% - 17px);
+    display: none;
+    padding: 5px 8px;
+    color: #505050;
+    border-left: 1px #000 solid;
+    text-align: left;
+    font-size: 13px;
+    font-family: Frank, "Franklin Gothic Medium";
+    float: left;
+}
+.form .hint.error{
+    color: #F00;
+    border-left-color: #F00;
+}

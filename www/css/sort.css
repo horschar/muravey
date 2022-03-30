@@ -1,0 +1,17 @@
+/*------------------------------ Sort ---------------------------------*/
+.label .sort {
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    background-image: url(../img/sort.svg);
+    background-size: 20px;
+    cursor: pointer;
+    background-position-x: -200px;
+    background-repeat: no-repeat;
+}
+.label td:hover .sort,
+.sort.active {background-position-x: 0;}
+.sort.asc{background-position-y: 0;}
+.sort.desc{background-position-y: -10px;}
+.sort.active.asc:hover{background-position-y: -10px;}
+.sort.active.desc:hover{background-position-y: 0;}

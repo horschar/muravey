@@ -1,0 +1,13 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+DirectoryIndex /www/index.php
+
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.+) $1 [L]
+RewriteCond %{DOCUMENT_ROOT}/www%{REQUEST_URI} -f
+RewriteRule ^(.+) /www/$1 [L]
+
+php_value max_input_vars 10000
+php_value upload_max_filesize 200M
+php_value post_max_size 200M

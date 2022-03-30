@@ -1,0 +1,30 @@
+/*------------------------------ TextSelect ----------------------------*/
+.TextSelect{
+    position:relative;
+    display:inline-block;
+    width: 100%;
+}
+.TextSelectItemsBl{
+    width:100%;
+    position:absolute;
+    display:none;
+    z-index:1;
+}
+.TextSelectItem{
+    background-color: rgb(232, 232, 232);
+    border-bottom: #868686 solid 1px;
+    min-width: 100%;
+    padding: 5px 13px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: left;
+    display: table;
+    white-space: nowrap;
+    border-left: #868686 solid 1px;
+    border-right: #868686 solid 1px;
+    color: #5e6063;
+}
+.TextSelectItem.active{
+    background-color: #f5c2c2;
+    color: #1c1c1c;
+}

@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+* {
+    margin:0;
+    padding:0;
+}
+
+.endPage {
+    border-collapse: collapse;
+    width:100%;
+    margin-top:24px;
+}
+.page {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.endPage td {
+    width:25%;
+    border: 0;
+}
+
+/* ------------------- RSN -------------------- */
+
+.rsn {
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+
+/* ------------------- RNK -------------------- */
+
+/* ------------------- RNK V1 -------------------- */
+
+.kotel_table1 {
+    border-collapse: collapse;
+    width: 100%;
+}
+.kotel_table1 td {
+    border: 1px solid;
+    padding: 3px;
+    text-align: left;
+    font-size: 15px;
+
+}
+.kotel_table1 .second_colum{
+    width: 31%;
+}
+.kotel_table1 .first_colum{
+    width: 7% !important;
+}
+
+/* ------------------- RNK V2.0 -------------------- */
+
+.kotel_table2_0 {
+    border-collapse: collapse;
+    width: 100%;
+}
+.kotel_table2_0 td {
+    border: 1px solid;
+    padding: 3px;
+    text-align: left;
+    font-size: 16px;
+    width: 33.333%;
+}
+
+/* ------------------- RNK V2.1 -------------------- */
+
+.kotel_2_1_box {
+    width: 46%;
+    display: inline-block;
+    float: left;
+}
+.kotel_2_1_table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.kotel_2_1_table td {
+    border: 1px solid;
+    padding: 1px;
+    text-align: left;
+    font-size: 12px;
+    width: 33.333%;
+}
+.kotel_2_1_table_title td {
+    font-weight: bold;
+}
+
+/* ------------------- RSZ -------------------- */
+
+/* ------------------- RSZ V1 -------------------- */
+
+.drillnote_toptable {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+.drillnote_toptable td {
+    border: 1px solid;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* ------------------- SOV -------------------- */
+
+/* ------------------- SOV V1 -------------------- */
+
+.drillnote_bottable {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    font-size: 11px;
+    font-family: "Times New Roman", sans-serif;
+}
+.drillnote_bottable td {
+    border: 1px solid;
+    padding: 3px 2px;
+}

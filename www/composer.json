@@ -1,0 +1,10 @@
+{
+    "require": {
+        "mpdf/mpdf": "8.0.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "OsT\\": "models/ost"
+        }
+    }
+}
